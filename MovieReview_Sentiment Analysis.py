@@ -103,16 +103,7 @@ def one_hot(y):
 y_train = one_hot(y_train)
 y_test = one_hot(y_test)
 
-"""### Multi-hot encode the input data
-
-All sequences are of different length and our vocabulory size is 10K.  
-1) Intialize vector of dimension 10,000 with value 0. 
-2) For those tokens in a sequence which are present in Vocabulary make that position as 1 and keep all other positions filled with 0. <br>
-For example, lets take Vocabulary = ['I': 0, ':1, 'eat: 2:' mango: 3, 'fruit':4, 'happy':5, 'you':6] 
-We have two sequnces and Multi-hot encoding of both sequences will be of dimension:  7 (vocab size).
-1) *Mango is my favourite fruit* becomes *Mango ? ? ? fruit* after removing words which are not in my vocabulary. Hence multi hot encoding will have two 1's corresponding to mango and fruit i.e, [0, 0, 0, 1, 1, 0, 0] <br>
-Similarly, 2) *I love to eat mango*  = *I ? ? eat mango*  =  [1, 1, 0, 1, 0, 0, 0]
-"""
+# Multi-hot encode the input data
 
 def multi_hot_encode(sequences, dimension):
   """
@@ -202,7 +193,7 @@ print(scores[1]*100)
 
 history_dict['loss']
 
-"""### Verify whether training in converged or not"""
+# Verify whether training in converged or not
 
 import matplotlib.pyplot as plt
 plt.clf()
