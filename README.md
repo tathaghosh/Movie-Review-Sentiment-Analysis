@@ -1,6 +1,6 @@
 # Movie Review Sentiment Analysis
 ## Sentiment analysis of Movie Reviews
-It is a natural language processing problem where text is understood and the underlying intent is predicted. Here, you need to  predict the sentiment of movie reviews as either positive or negative in Python using the Keras deep learning library.
+It is a natural language processing problem where text is understood and the underlying intent is predicted. Here, the sentiment of movie reviews is predicted as either positive or negative in Python using the Keras deep learning library.
 
 ## Data description
 The dataset is the Large Movie Review Dataset often referred to as the IMDB dataset.
